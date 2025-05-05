@@ -1,20 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#345066">
 
-    <!-- Container Putih -->
+    <!-- Logo di atas -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo_tailor"
+        android:contentDescription="Logo App" />
+
+    <!-- Box Register di bawah logo -->
     <LinearLayout
         android:id="@+id/formRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/logoImage"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_centerHorizontal="true"
         android:orientation="vertical"
         android:background="@drawable/bg_edittext_rounded"
-        android:padding="24dp"
-        android:elevation="6dp">
+        android:padding="20dp"
+        android:elevation="4dp">
 
         <!-- Judul Register -->
         <TextView
