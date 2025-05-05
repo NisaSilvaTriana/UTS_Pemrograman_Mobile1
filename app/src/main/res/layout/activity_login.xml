@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#345066">
+
+    <!-- "Hello!" di kiri atas -->
+    <TextView
+        android:id="@+id/helloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello!"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_margin="24dp" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/logo_tailor"
+        android:contentDescription="Logo App" />
+
+    <!-- Card Putih (Form Login) -->
+    <LinearLayout
+        android:id="@+id/formContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_edittext_rounded"
+        android:padding="20dp"
+        android:layout_margin="50dp"
+        android:elevation="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logoImage"
+        android:layout_marginTop="10dp">
+
+    <!-- Judul Login di tengah -->
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:paddingBottom="2dp" />
+
+        <!-- Input Username -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@android:drawable/editbox_background" /> <!-- background custom -->
+
+        <!-- Input Password -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginTop="12dp" />
+
+        <!-- Tombol Login -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#345066"
+            android:textColor="#FFFFFF" />
+
+        <!-- Tombol Register -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#345066"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>
