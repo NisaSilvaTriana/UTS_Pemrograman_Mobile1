@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#345066"
+    android:padding="16dp">
+
+    <!-- Judul Dashboard -->
+    <TextView
+        android:id="@+id/judulDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suit Collection"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="12dp" />
+
+    <!-- ListView untuk daftar jas -->
+    <ListView
+        android:id="@+id/listBaju"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/judulDashboard"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="12dp" />
+</RelativeLayout>
