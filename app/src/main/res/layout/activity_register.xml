@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:background="#345066">
 
-    <!-- Logo di atas -->
+    <!--Logo di atas-->
     <ImageView
         android:id="@+id/logoImage"
         android:layout_width="200dp"

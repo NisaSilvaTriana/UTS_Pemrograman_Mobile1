@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#c6d5e2" /> <!-- warna putih -->
-    <corners android:radius="24dp" /> <!-- sudut tumpul -->
-    <stroke android:color="#CCCCCC" android:width="1dp" /> <!-- garis tepi -->
+    <solid android:color="#c6d5e2" />
+    <corners android:radius="24dp" />
+    <stroke android:color="#CCCCCC" android:width="1dp" />
 </shape>
