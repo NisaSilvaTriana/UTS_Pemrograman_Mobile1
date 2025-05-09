@@ -41,7 +41,7 @@ class RegisterActivity : AppCompatActivity() {
             val email = registerEmail.text.toString()
 
             if (username.isNotEmpty() && password.isNotEmpty() && email.isNotEmpty()) {
-                // ✅ Simpan data ke SharedPreferences
+
                 val sharedPref = getSharedPreferences("UserData", MODE_PRIVATE)
                 with(sharedPref.edit()) {
                     putString("username", username)

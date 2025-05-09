@@ -28,7 +28,6 @@ class LoginActivity : AppCompatActivity() {
             val inputUsername = usernameEditText.text.toString()
             val inputPassword = passwordEditText.text.toString()
 
-            // Ambil data dari SharedPreferences
             val sharedPref = getSharedPreferences("UserData", MODE_PRIVATE)
             val savedUsername = sharedPref.getString("username", null)
             val savedPassword = sharedPref.getString("password", null)
